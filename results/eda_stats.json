@@ -1,0 +1,714 @@
+{
+  "split_definitions": {
+    "train_years": [
+      1993,
+      2015
+    ],
+    "val_years": [
+      2016,
+      2017
+    ],
+    "test_years": [
+      2018,
+      2022
+    ],
+    "test_subperiods": {
+      "normal": [
+        2018,
+        2019
+      ],
+      "covid": [
+        2020,
+        2022
+      ]
+    }
+  },
+  "panel_overview": {
+    "total_rows": 27720,
+    "provinces_count": 77,
+    "years_span": [
+      1993,
+      2022
+    ],
+    "train_rows": 21252,
+    "train_valid_case_rows": 20556,
+    "train_missing_case_rows": 696
+  },
+  "seasonality": {
+    "monthly_profile": [
+      {
+        "month": 1,
+        "mean_cases": 19.3,
+        "median_cases": 7.0,
+        "std_cases": 57.42,
+        "sem_cases": 1.39,
+        "total_cases": 33068,
+        "mean_precip_mm": 19.33,
+        "mean_temp_c": 24.16,
+        "mean_humidity_pct": 66.5,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 2,
+        "mean_cases": 17.88,
+        "median_cases": 7.0,
+        "std_cases": 48.42,
+        "sem_cases": 1.17,
+        "total_cases": 30623,
+        "mean_precip_mm": 19.79,
+        "mean_temp_c": 25.98,
+        "mean_humidity_pct": 64.92,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 3,
+        "mean_cases": 24.55,
+        "median_cases": 10.0,
+        "std_cases": 56.94,
+        "sem_cases": 1.38,
+        "total_cases": 42060,
+        "mean_precip_mm": 58.48,
+        "mean_temp_c": 27.62,
+        "mean_humidity_pct": 66.16,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 4,
+        "mean_cases": 28.91,
+        "median_cases": 13.0,
+        "std_cases": 59.35,
+        "sem_cases": 1.43,
+        "total_cases": 49529,
+        "mean_precip_mm": 94.11,
+        "mean_temp_c": 28.6,
+        "mean_humidity_pct": 70.49,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 5,
+        "mean_cases": 56.32,
+        "median_cases": 27.0,
+        "std_cases": 89.62,
+        "sem_cases": 2.17,
+        "total_cases": 96479,
+        "mean_precip_mm": 189.84,
+        "mean_temp_c": 27.74,
+        "mean_humidity_pct": 78.92,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 6,
+        "mean_cases": 101.55,
+        "median_cases": 47.0,
+        "std_cases": 167.22,
+        "sem_cases": 4.04,
+        "total_cases": 173957,
+        "mean_precip_mm": 188.02,
+        "mean_temp_c": 27.17,
+        "mean_humidity_pct": 81.23,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 7,
+        "mean_cases": 114.31,
+        "median_cases": 51.0,
+        "std_cases": 202.6,
+        "sem_cases": 4.9,
+        "total_cases": 195816,
+        "mean_precip_mm": 212.5,
+        "mean_temp_c": 26.65,
+        "mean_humidity_pct": 82.56,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 8,
+        "mean_cases": 100.65,
+        "median_cases": 43.0,
+        "std_cases": 185.28,
+        "sem_cases": 4.48,
+        "total_cases": 172415,
+        "mean_precip_mm": 237.79,
+        "mean_temp_c": 26.36,
+        "mean_humidity_pct": 83.99,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 9,
+        "mean_cases": 70.55,
+        "median_cases": 29.0,
+        "std_cases": 134.9,
+        "sem_cases": 3.26,
+        "total_cases": 120845,
+        "mean_precip_mm": 267.58,
+        "mean_temp_c": 25.97,
+        "mean_humidity_pct": 86.05,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 10,
+        "mean_cases": 48.82,
+        "median_cases": 20.0,
+        "std_cases": 103.79,
+        "sem_cases": 2.51,
+        "total_cases": 83623,
+        "mean_precip_mm": 174.42,
+        "mean_temp_c": 25.59,
+        "mean_humidity_pct": 83.3,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 11,
+        "mean_cases": 38.91,
+        "median_cases": 14.0,
+        "std_cases": 137.44,
+        "sem_cases": 3.32,
+        "total_cases": 66653,
+        "mean_precip_mm": 74.45,
+        "mean_temp_c": 25.04,
+        "mean_humidity_pct": 74.92,
+        "valid_province_months": 1713
+      },
+      {
+        "month": 12,
+        "mean_cases": 22.87,
+        "median_cases": 7.0,
+        "std_cases": 80.73,
+        "sem_cases": 1.95,
+        "total_cases": 39182,
+        "mean_precip_mm": 36.82,
+        "mean_temp_c": 23.86,
+        "mean_humidity_pct": 68.23,
+        "valid_province_months": 1713
+      }
+    ],
+    "peak_dengue_month": 7,
+    "peak_dengue_mean_cases": 114.31,
+    "peak_dengue_median_cases": 51.0,
+    "trough_dengue_month": 2,
+    "trough_dengue_mean_cases": 17.88,
+    "trough_dengue_median_cases": 7.0,
+    "peak_temp_month": 4,
+    "peak_temp_mean_c": 28.6,
+    "peak_precip_month": 9,
+    "peak_precip_mean_mm": 267.58,
+    "monsoon_onset_month": 5,
+    "monsoon_onset_mean_precip_mm": 189.84
+  },
+  "lag_correlations": {
+    "precip_sum_mm": [
+      {
+        "lag": 0,
+        "median_within_province": 0.2853,
+        "q25_within_province": 0.1665,
+        "q75_within_province": 0.3505,
+        "pooled_log1p": 0.2895,
+        "pooled_zscore": 0.2523,
+        "pooled_raw": 0.15
+      },
+      {
+        "lag": 1,
+        "median_within_province": 0.229,
+        "q25_within_province": 0.1629,
+        "q75_within_province": 0.2735,
+        "pooled_log1p": 0.2256,
+        "pooled_zscore": 0.1899,
+        "pooled_raw": 0.1093
+      },
+      {
+        "lag": 2,
+        "median_within_province": 0.0759,
+        "q25_within_province": 0.0057,
+        "q75_within_province": 0.1172,
+        "pooled_log1p": 0.0677,
+        "pooled_zscore": 0.0525,
+        "pooled_raw": 0.0184
+      },
+      {
+        "lag": 3,
+        "median_within_province": -0.1054,
+        "q25_within_province": -0.1632,
+        "q75_within_province": -0.0299,
+        "pooled_log1p": -0.1339,
+        "pooled_zscore": -0.1005,
+        "pooled_raw": -0.0832
+      },
+      {
+        "lag": 4,
+        "median_within_province": -0.2469,
+        "q25_within_province": -0.3015,
+        "q75_within_province": -0.1694,
+        "pooled_log1p": -0.3031,
+        "pooled_zscore": -0.2205,
+        "pooled_raw": -0.1645
+      }
+    ],
+    "temp_mean_c": [
+      {
+        "lag": 0,
+        "median_within_province": 0.1345,
+        "q25_within_province": 0.0609,
+        "q75_within_province": 0.2313,
+        "pooled_log1p": 0.2685,
+        "pooled_zscore": 0.1204,
+        "pooled_raw": 0.1041
+      },
+      {
+        "lag": 1,
+        "median_within_province": 0.2686,
+        "q25_within_province": 0.1731,
+        "q75_within_province": 0.3463,
+        "pooled_log1p": 0.3689,
+        "pooled_zscore": 0.2074,
+        "pooled_raw": 0.1662
+      },
+      {
+        "lag": 2,
+        "median_within_province": 0.3909,
+        "q25_within_province": 0.2912,
+        "q75_within_province": 0.4549,
+        "pooled_log1p": 0.4219,
+        "pooled_zscore": 0.2899,
+        "pooled_raw": 0.224
+      },
+      {
+        "lag": 3,
+        "median_within_province": 0.394,
+        "q25_within_province": 0.3057,
+        "q75_within_province": 0.4684,
+        "pooled_log1p": 0.3904,
+        "pooled_zscore": 0.3007,
+        "pooled_raw": 0.2303
+      },
+      {
+        "lag": 4,
+        "median_within_province": 0.2833,
+        "q25_within_province": 0.2289,
+        "q75_within_province": 0.3597,
+        "pooled_log1p": 0.2718,
+        "pooled_zscore": 0.2091,
+        "pooled_raw": 0.1625
+      }
+    ],
+    "humidity_mean_pct": [
+      {
+        "lag": 0,
+        "median_within_province": 0.2857,
+        "q25_within_province": 0.186,
+        "q75_within_province": 0.3443,
+        "pooled_log1p": 0.3046,
+        "pooled_zscore": 0.2374,
+        "pooled_raw": 0.1407
+      },
+      {
+        "lag": 1,
+        "median_within_province": 0.1818,
+        "q25_within_province": 0.1273,
+        "q75_within_province": 0.2434,
+        "pooled_log1p": 0.1973,
+        "pooled_zscore": 0.1568,
+        "pooled_raw": 0.0846
+      },
+      {
+        "lag": 2,
+        "median_within_province": -0.0002,
+        "q25_within_province": -0.0771,
+        "q75_within_province": 0.0972,
+        "pooled_log1p": 0.0041,
+        "pooled_zscore": 0.0003,
+        "pooled_raw": -0.0225
+      },
+      {
+        "lag": 3,
+        "median_within_province": -0.1981,
+        "q25_within_province": -0.3148,
+        "q75_within_province": -0.0819,
+        "pooled_log1p": -0.1959,
+        "pooled_zscore": -0.1618,
+        "pooled_raw": -0.1354
+      },
+      {
+        "lag": 4,
+        "median_within_province": -0.3371,
+        "q25_within_province": -0.4193,
+        "q75_within_province": -0.2143,
+        "pooled_log1p": -0.3384,
+        "pooled_zscore": -0.2751,
+        "pooled_raw": -0.2144
+      }
+    ]
+  },
+  "province_heterogeneity": {
+    "train_years": [
+      1993,
+      2015
+    ],
+    "national_mean_cases": 53.72,
+    "national_std_cases": 126.37,
+    "national_threshold_mean_plus_1sd": 180.09,
+    "highest_province": {
+      "province_en": "Bangkok",
+      "mean": 354.45,
+      "std": 463.8,
+      "median": 187.5,
+      "max": 4273.0,
+      "threshold": 818.26
+    },
+    "lowest_province": {
+      "province_en": "Nong Bua Lamphu",
+      "mean": 7.12,
+      "std": 13.04,
+      "median": 3.0,
+      "max": 97.0,
+      "threshold": 20.17
+    },
+    "ratio_top_to_bottom_mean": 49.78,
+    "ratio_highest_to_national_mean": 6.6,
+    "top_5_provinces": [
+      {
+        "province_en": "Bangkok",
+        "mean": 354.45,
+        "std": 463.8,
+        "median": 187.5,
+        "max": 4273.0,
+        "threshold": 818.26
+      },
+      {
+        "province_en": "Nakhon Ratchasima",
+        "mean": 152.45,
+        "std": 237.33,
+        "median": 52.5,
+        "max": 1691.0,
+        "threshold": 389.78
+      },
+      {
+        "province_en": "Nakhon Si Thammarat",
+        "mean": 145.31,
+        "std": 300.48,
+        "median": 54.0,
+        "max": 3113.0,
+        "threshold": 445.78
+      },
+      {
+        "province_en": "Chiang Mai",
+        "mean": 133.16,
+        "std": 313.83,
+        "median": 29.0,
+        "max": 2592.0,
+        "threshold": 446.99
+      },
+      {
+        "province_en": "Surin",
+        "mean": 112.67,
+        "std": 155.56,
+        "median": 40.5,
+        "max": 796.0,
+        "threshold": 268.23
+      }
+    ],
+    "bottom_5_provinces": [
+      {
+        "province_en": "Nong Bua Lamphu",
+        "mean": 7.12,
+        "std": 13.04,
+        "median": 3.0,
+        "max": 97.0,
+        "threshold": 20.17
+      },
+      {
+        "province_en": "Sing Buri",
+        "mean": 8.12,
+        "std": 16.64,
+        "median": 2.0,
+        "max": 107.0,
+        "threshold": 24.76
+      },
+      {
+        "province_en": "Satun",
+        "mean": 12.59,
+        "std": 18.35,
+        "median": 6.0,
+        "max": 125.0,
+        "threshold": 30.93
+      },
+      {
+        "province_en": "Ranong",
+        "mean": 12.83,
+        "std": 17.44,
+        "median": 8.0,
+        "max": 140.0,
+        "threshold": 30.28
+      },
+      {
+        "province_en": "Samut Songkhram",
+        "mean": 13.75,
+        "std": 16.0,
+        "median": 8.0,
+        "max": 91.0,
+        "threshold": 29.75
+      }
+    ],
+    "provinces_never_reaching_national_threshold_count": 11,
+    "provinces_never_reaching_national_threshold_list": [
+      "Amnat Charoen",
+      "Ang Thong",
+      "Bueng Kan",
+      "Mukdahan",
+      "Nakhon Nayok",
+      "Nong Bua Lamphu",
+      "Ranong",
+      "Samut Songkhram",
+      "Satun",
+      "Sing Buri",
+      "Trat"
+    ]
+  },
+  "annual_trends": {
+    "annual_data": [
+      {
+        "year": 1993,
+        "total_cases": 66092,
+        "mean_cases": 76.5,
+        "zero_share_pct": 4.17,
+        "valid_months": 864
+      },
+      {
+        "year": 1994,
+        "total_cases": 49483,
+        "mean_cases": 57.27,
+        "zero_share_pct": 4.05,
+        "valid_months": 864
+      },
+      {
+        "year": 1995,
+        "total_cases": 58512,
+        "mean_cases": 67.72,
+        "zero_share_pct": 5.67,
+        "valid_months": 864
+      },
+      {
+        "year": 1996,
+        "total_cases": 35952,
+        "mean_cases": 41.61,
+        "zero_share_pct": 5.9,
+        "valid_months": 864
+      },
+      {
+        "year": 1997,
+        "total_cases": 99153,
+        "mean_cases": 114.76,
+        "zero_share_pct": 3.24,
+        "valid_months": 864
+      },
+      {
+        "year": 1998,
+        "total_cases": 124557,
+        "mean_cases": 144.16,
+        "zero_share_pct": 0.93,
+        "valid_months": 864
+      },
+      {
+        "year": 1999,
+        "total_cases": 19477,
+        "mean_cases": 22.54,
+        "zero_share_pct": 10.42,
+        "valid_months": 864
+      },
+      {
+        "year": 2000,
+        "total_cases": 14793,
+        "mean_cases": 17.12,
+        "zero_share_pct": 20.02,
+        "valid_months": 864
+      },
+      {
+        "year": 2001,
+        "total_cases": 104671,
+        "mean_cases": 121.15,
+        "zero_share_pct": 3.12,
+        "valid_months": 864
+      },
+      {
+        "year": 2002,
+        "total_cases": 77921,
+        "mean_cases": 90.19,
+        "zero_share_pct": 2.89,
+        "valid_months": 864
+      },
+      {
+        "year": 2003,
+        "total_cases": 17492,
+        "mean_cases": 19.18,
+        "zero_share_pct": 6.58,
+        "valid_months": 912
+      },
+      {
+        "year": 2004,
+        "total_cases": 11181,
+        "mean_cases": 12.26,
+        "zero_share_pct": 10.64,
+        "valid_months": 912
+      },
+      {
+        "year": 2005,
+        "total_cases": 15070,
+        "mean_cases": 16.52,
+        "zero_share_pct": 8.22,
+        "valid_months": 912
+      },
+      {
+        "year": 2006,
+        "total_cases": 17062,
+        "mean_cases": 18.71,
+        "zero_share_pct": 9.76,
+        "valid_months": 912
+      },
+      {
+        "year": 2007,
+        "total_cases": 25446,
+        "mean_cases": 27.9,
+        "zero_share_pct": 7.24,
+        "valid_months": 912
+      },
+      {
+        "year": 2008,
+        "total_cases": 36645,
+        "mean_cases": 40.18,
+        "zero_share_pct": 4.39,
+        "valid_months": 912
+      },
+      {
+        "year": 2009,
+        "total_cases": 25194,
+        "mean_cases": 27.62,
+        "zero_share_pct": 5.04,
+        "valid_months": 912
+      },
+      {
+        "year": 2010,
+        "total_cases": 53149,
+        "mean_cases": 58.28,
+        "zero_share_pct": 3.95,
+        "valid_months": 912
+      },
+      {
+        "year": 2011,
+        "total_cases": 29759,
+        "mean_cases": 32.21,
+        "zero_share_pct": 8.23,
+        "valid_months": 924
+      },
+      {
+        "year": 2012,
+        "total_cases": 25316,
+        "mean_cases": 27.4,
+        "zero_share_pct": 4.98,
+        "valid_months": 924
+      },
+      {
+        "year": 2013,
+        "total_cases": 87502,
+        "mean_cases": 94.7,
+        "zero_share_pct": 3.46,
+        "valid_months": 924
+      },
+      {
+        "year": 2014,
+        "total_cases": 23170,
+        "mean_cases": 25.08,
+        "zero_share_pct": 5.3,
+        "valid_months": 924
+      },
+      {
+        "year": 2015,
+        "total_cases": 86653,
+        "mean_cases": 93.78,
+        "zero_share_pct": 3.79,
+        "valid_months": 924
+      },
+      {
+        "year": 2016,
+        "total_cases": 38466,
+        "mean_cases": 41.63,
+        "zero_share_pct": 2.71,
+        "valid_months": 924
+      },
+      {
+        "year": 2017,
+        "total_cases": 31843,
+        "mean_cases": 34.46,
+        "zero_share_pct": 5.63,
+        "valid_months": 924
+      },
+      {
+        "year": 2018,
+        "total_cases": 55076,
+        "mean_cases": 59.61,
+        "zero_share_pct": 2.92,
+        "valid_months": 924
+      },
+      {
+        "year": 2019,
+        "total_cases": 87866,
+        "mean_cases": 95.09,
+        "zero_share_pct": 1.19,
+        "valid_months": 924
+      },
+      {
+        "year": 2020,
+        "total_cases": 50911,
+        "mean_cases": 55.1,
+        "zero_share_pct": 3.14,
+        "valid_months": 924
+      },
+      {
+        "year": 2021,
+        "total_cases": 7778,
+        "mean_cases": 8.42,
+        "zero_share_pct": 24.13,
+        "valid_months": 924
+      },
+      {
+        "year": 2022,
+        "total_cases": 34605,
+        "mean_cases": 37.45,
+        "zero_share_pct": 12.77,
+        "valid_months": 924
+      }
+    ],
+    "top_epidemic_years": [
+      {
+        "year": 1998,
+        "total_cases": 124557
+      },
+      {
+        "year": 2001,
+        "total_cases": 104671
+      },
+      {
+        "year": 1997,
+        "total_cases": 99153
+      },
+      {
+        "year": 2019,
+        "total_cases": 87866
+      },
+      {
+        "year": 2013,
+        "total_cases": 87502
+      }
+    ],
+    "peak_year": {
+      "year": 1998,
+      "total_cases": 124557
+    },
+    "year_2019_cases": 87866,
+    "year_2021_cases": 7778,
+    "year_2021_zero_share_pct": 24.13,
+    "covid_drop_ratio_2019_to_2021": 11.3,
+    "train_period_total_cases": 1104250,
+    "val_period_total_cases": 70309,
+    "test_period_total_cases": 236236,
+    "test_normal_cases": 142942,
+    "test_covid_cases": 93294
+  }
+}

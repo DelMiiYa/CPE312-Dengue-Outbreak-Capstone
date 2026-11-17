@@ -1,0 +1,21 @@
+# Single place for every number the code uses. Mirrors _agent/docs/SSOT.md section 2.
+# Do not hard-code these values elsewhere.
+seed: 42
+horizon_months: 1
+outbreak_k: 1.0            # label: cases > mean_p + k * SD_p, computed on train years only
+split:
+  train_years: [1993, 2015]       # inclusive
+  val_years: [2016, 2017]         # inclusive
+  test_years: [2018, 2022]        # inclusive
+  test_subperiods:
+    normal: [2018, 2019]
+    covid: [2020, 2022]
+features:
+  case_lags: [1, 2, 3]
+  case_rolling_window: 3
+  weather_lags: [0, 1, 2, 3]
+paths:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  metrics_json: results/metrics.json

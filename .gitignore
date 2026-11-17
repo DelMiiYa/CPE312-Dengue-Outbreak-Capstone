@@ -1,0 +1,13 @@
+﻿_agent/
+data/raw/Temporal_extract_V1_3_1.csv
+data/raw/Temporal_extract_V1_3_1.zip
+data/raw/weather_cache/
+data/interim/
+scratch/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.zip
+.~lock*
+.ipynb_checkpoints/
+.venv/

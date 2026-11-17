@@ -1,0 +1,590 @@
+{
+  "dataset_summary": {
+    "total_test_rows": 4620,
+    "test_years": [
+      2018,
+      2022
+    ],
+    "total_outbreaks": 392,
+    "total_non_outbreaks": 4228,
+    "prevalence": 0.08484848484848485,
+    "hgb_operating_threshold": 0.49
+  },
+  "onset_vs_ongoing": {
+    "breakdown": {
+      "total_outbreaks": 392,
+      "onset_count": 148,
+      "onset_pct": 37.755102040816325,
+      "ongoing_count": 244,
+      "ongoing_pct": 62.244897959183675
+    },
+    "persistence_last_month": {
+      "onset": {
+        "tp": 0,
+        "fn": 148,
+        "total": 148,
+        "recall": 0.0
+      },
+      "ongoing": {
+        "tp": 244,
+        "fn": 0,
+        "total": 244,
+        "recall": 1.0
+      },
+      "overall": {
+        "tp": 244,
+        "fn": 148,
+        "total": 392,
+        "recall": 0.6224489795918368
+      }
+    },
+    "logistic_regression": {
+      "onset": {
+        "tp": 101,
+        "fn": 47,
+        "total": 148,
+        "recall": 0.6824324324324325
+      },
+      "ongoing": {
+        "tp": 236,
+        "fn": 8,
+        "total": 244,
+        "recall": 0.9672131147540983
+      },
+      "overall": {
+        "tp": 337,
+        "fn": 55,
+        "total": 392,
+        "recall": 0.8596938775510204
+      }
+    },
+    "random_forest": {
+      "onset": {
+        "tp": 92,
+        "fn": 56,
+        "total": 148,
+        "recall": 0.6216216216216216
+      },
+      "ongoing": {
+        "tp": 233,
+        "fn": 11,
+        "total": 244,
+        "recall": 0.9549180327868853
+      },
+      "overall": {
+        "tp": 325,
+        "fn": 67,
+        "total": 392,
+        "recall": 0.8290816326530612
+      }
+    },
+    "hist_gradient_boosting": {
+      "onset": {
+        "tp": 108,
+        "fn": 40,
+        "total": 148,
+        "recall": 0.7297297297297297
+      },
+      "ongoing": {
+        "tp": 238,
+        "fn": 6,
+        "total": 244,
+        "recall": 0.9754098360655737
+      },
+      "overall": {
+        "tp": 346,
+        "fn": 46,
+        "total": 392,
+        "recall": 0.8826530612244898
+      },
+      "fn_share": {
+        "total_fn": 46,
+        "onset_fn": 40,
+        "onset_fn_pct": 86.95652173913044,
+        "ongoing_fn": 6,
+        "ongoing_fn_pct": 13.043478260869565
+      },
+      "onset_case_dynamics": {
+        "missed_mean_case_jump": 3.346280151225165,
+        "detected_mean_case_jump": 2.116074439535526,
+        "missed_mean_prior_zscore": 0.22751648274619857,
+        "detected_mean_prior_zscore": 0.5576991264308572
+      }
+    }
+  },
+  "fp_anatomy_hgb": {
+    "total_fp": 295,
+    "post_outbreak_tail": {
+      "count": 109,
+      "pct": 36.94915254237288
+    },
+    "elevated_endemic_near_miss": {
+      "count": 268,
+      "pct": 90.84745762711864
+    },
+    "pre_outbreak_early_warning_t2": {
+      "count": 51,
+      "pct": 17.28813559322034
+    },
+    "at_least_one_benign": {
+      "count": 276,
+      "pct": 93.55932203389831
+    },
+    "pure_false_alarm": {
+      "count": 19,
+      "pct": 6.440677966101695
+    },
+    "mean_ratio_target_to_threshold_fp": 0.6875307848931919,
+    "mean_ratio_target_to_threshold_tn": 0.19684004202362618,
+    "mutually_exclusive_partition": {
+      "elevated_endemic_near_miss": {
+        "count": 121,
+        "pct": 41.01694915254237
+      },
+      "post_outbreak_tail": {
+        "count": 109,
+        "pct": 36.94915254237288
+      },
+      "pre_outbreak_early_warning": {
+        "count": 46,
+        "pct": 15.593220338983052
+      },
+      "pure_false_alarm": {
+        "count": 19,
+        "pct": 6.440677966101695
+      }
+    }
+  },
+  "geographic_burden_tiers": {
+    "tier_definitions": {
+      "Low": {
+        "provinces_count": 26,
+        "mean_p_min": 7.121794871794871,
+        "mean_p_max": 31.717391304347824
+      },
+      "Medium": {
+        "provinces_count": 25,
+        "mean_p_min": 32.155797101449274,
+        "mean_p_max": 52.822463768115945
+      },
+      "High": {
+        "provinces_count": 26,
+        "mean_p_min": 56.18115942028985,
+        "mean_p_max": 354.4528985507246
+      }
+    },
+    "metrics_by_tier": {
+      "Low": {
+        "rows": 1560,
+        "pos": 129,
+        "tp": 105,
+        "fp": 125,
+        "fn": 24,
+        "tn": 1306,
+        "recall": 0.813953488372093,
+        "precision": 0.45652173913043476,
+        "f1": 0.584958217270195
+      },
+      "Medium": {
+        "rows": 1500,
+        "pos": 102,
+        "tp": 95,
+        "fp": 79,
+        "fn": 7,
+        "tn": 1319,
+        "recall": 0.9313725490196079,
+        "precision": 0.5459770114942529,
+        "f1": 0.6884057971014492
+      },
+      "High": {
+        "rows": 1560,
+        "pos": 161,
+        "tp": 146,
+        "fp": 91,
+        "fn": 15,
+        "tn": 1308,
+        "recall": 0.906832298136646,
+        "precision": 0.6160337552742616,
+        "f1": 0.7336683417085427
+      }
+    }
+  },
+  "temporal_breakdown": {
+    "by_year": {
+      "2018": {
+        "rows": 924,
+        "pos": 98,
+        "tp": 89,
+        "fp": 79,
+        "fn": 9,
+        "tn": 747,
+        "recall": 0.9081632653061225,
+        "precision": 0.5297619047619048,
+        "f1": 0.6691729323308271
+      },
+      "2019": {
+        "rows": 924,
+        "pos": 171,
+        "tp": 151,
+        "fp": 126,
+        "fn": 20,
+        "tn": 627,
+        "recall": 0.8830409356725146,
+        "precision": 0.5451263537906137,
+        "f1": 0.6741071428571429
+      },
+      "2020": {
+        "rows": 924,
+        "pos": 78,
+        "tp": 71,
+        "fp": 78,
+        "fn": 7,
+        "tn": 768,
+        "recall": 0.9102564102564102,
+        "precision": 0.47651006711409394,
+        "f1": 0.6255506607929515
+      },
+      "2021": {
+        "rows": 924,
+        "pos": 3,
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "tn": 919,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.75
+      },
+      "2022": {
+        "rows": 924,
+        "pos": 42,
+        "tp": 32,
+        "fp": 10,
+        "fn": 10,
+        "tn": 872,
+        "recall": 0.7619047619047619,
+        "precision": 0.7619047619047619,
+        "f1": 0.7619047619047619
+      }
+    },
+    "by_subperiod": {
+      "normal_2018_2019": {
+        "rows": 1848,
+        "pos": 269,
+        "tp": 240,
+        "fp": 205,
+        "fn": 29,
+        "tn": 1374,
+        "recall": 0.8921933085501859,
+        "precision": 0.5393258426966292,
+        "f1": 0.6722689075630253
+      },
+      "covid_2020_2022": {
+        "rows": 2772,
+        "pos": 123,
+        "tp": 106,
+        "fp": 90,
+        "fn": 17,
+        "tn": 2559,
+        "recall": 0.8617886178861789,
+        "precision": 0.5408163265306123,
+        "f1": 0.664576802507837
+      }
+    },
+    "by_target_month": {
+      "01": {
+        "rows": 385,
+        "pos": 3,
+        "tp": 2,
+        "fp": 5,
+        "fn": 1,
+        "tn": 377,
+        "recall": 0.6666666666666666,
+        "precision": 0.2857142857142857,
+        "f1": 0.4
+      },
+      "02": {
+        "rows": 385,
+        "pos": 2,
+        "tp": 2,
+        "fp": 8,
+        "fn": 0,
+        "tn": 375,
+        "recall": 1.0,
+        "precision": 0.2,
+        "f1": 0.3333333333333333
+      },
+      "03": {
+        "rows": 385,
+        "pos": 3,
+        "tp": 3,
+        "fp": 9,
+        "fn": 0,
+        "tn": 373,
+        "recall": 1.0,
+        "precision": 0.25,
+        "f1": 0.4
+      },
+      "04": {
+        "rows": 385,
+        "pos": 6,
+        "tp": 4,
+        "fp": 18,
+        "fn": 2,
+        "tn": 361,
+        "recall": 0.6666666666666666,
+        "precision": 0.18181818181818182,
+        "f1": 0.2857142857142857
+      },
+      "05": {
+        "rows": 385,
+        "pos": 25,
+        "tp": 17,
+        "fp": 33,
+        "fn": 8,
+        "tn": 327,
+        "recall": 0.68,
+        "precision": 0.34,
+        "f1": 0.4533333333333333
+      },
+      "06": {
+        "rows": 385,
+        "pos": 74,
+        "tp": 69,
+        "fp": 38,
+        "fn": 5,
+        "tn": 273,
+        "recall": 0.9324324324324325,
+        "precision": 0.6448598130841121,
+        "f1": 0.7624309392265194
+      },
+      "07": {
+        "rows": 385,
+        "pos": 97,
+        "tp": 90,
+        "fp": 45,
+        "fn": 7,
+        "tn": 243,
+        "recall": 0.9278350515463918,
+        "precision": 0.6666666666666666,
+        "f1": 0.7758620689655172
+      },
+      "08": {
+        "rows": 385,
+        "pos": 72,
+        "tp": 68,
+        "fp": 66,
+        "fn": 4,
+        "tn": 247,
+        "recall": 0.9444444444444444,
+        "precision": 0.5074626865671642,
+        "f1": 0.6601941747572816
+      },
+      "09": {
+        "rows": 385,
+        "pos": 51,
+        "tp": 41,
+        "fp": 32,
+        "fn": 10,
+        "tn": 302,
+        "recall": 0.803921568627451,
+        "precision": 0.5616438356164384,
+        "f1": 0.6612903225806451
+      },
+      "10": {
+        "rows": 385,
+        "pos": 27,
+        "tp": 23,
+        "fp": 22,
+        "fn": 4,
+        "tn": 336,
+        "recall": 0.8518518518518519,
+        "precision": 0.5111111111111111,
+        "f1": 0.6388888888888888
+      },
+      "11": {
+        "rows": 385,
+        "pos": 22,
+        "tp": 19,
+        "fp": 7,
+        "fn": 3,
+        "tn": 356,
+        "recall": 0.8636363636363636,
+        "precision": 0.7307692307692307,
+        "f1": 0.7916666666666666
+      },
+      "12": {
+        "rows": 385,
+        "pos": 10,
+        "tp": 8,
+        "fp": 12,
+        "fn": 2,
+        "tn": 363,
+        "recall": 0.8,
+        "precision": 0.4,
+        "f1": 0.5333333333333333
+      }
+    }
+  },
+  "case_studies": {
+    "false_negatives": [
+      {
+        "province_en": "Bueng Kan",
+        "target_year": 2019,
+        "target_month": 5,
+        "target_year_month": "2019-05",
+        "cases_lag_0": 7.0,
+        "target_cases_t1": 99.0,
+        "mean_p": 18.866666666666667,
+        "threshold_p": 53.337222348865176,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 1,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.14615,
+        "pred_hist_gradient_boosting": 0,
+        "archetype": "Explosive Onset Spike (May Monsoon Surge)",
+        "explanation": "Sudden 14.1x case explosion (7.0 to 99.0) at the start of the massive 2019 national epidemic; near-zero lag activity suppressed model probability below the operating threshold."
+      },
+      {
+        "province_en": "Sing Buri",
+        "target_year": 2019,
+        "target_month": 6,
+        "target_year_month": "2019-06",
+        "cases_lag_0": 4.0,
+        "target_cases_t1": 42.0,
+        "mean_p": 8.123188405797102,
+        "threshold_p": 24.758508070370908,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 1,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.01565,
+        "pred_hist_gradient_boosting": 0,
+        "archetype": "Small-Count Percentage Jump",
+        "explanation": "Cases jumped 10.5x (4.0 to 42.0) crossing the small absolute threshold of 24.8; low-burden provinces lack early lag warnings before steep epidemic jumps."
+      },
+      {
+        "province_en": "Udon Thani",
+        "target_year": 2020,
+        "target_month": 7,
+        "target_year_month": "2020-07",
+        "cases_lag_0": 28.0,
+        "target_cases_t1": 291.0,
+        "mean_p": 66.45652173913044,
+        "threshold_p": 221.4709900170756,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 1,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.01118,
+        "pred_hist_gradient_boosting": 0,
+        "archetype": "COVID-19 Atypical Outbreak Spike",
+        "explanation": "Cases skyrocketed 10.4x (28.0 to 291.0) during early COVID-19 pandemic mobility restrictions, defying suppressed national transmission trends."
+      }
+    ],
+    "false_positives": [
+      {
+        "province_en": "Samut Sakhon",
+        "target_year": 2018,
+        "target_month": 6,
+        "target_year_month": "2018-06",
+        "cases_lag_0": 64.0,
+        "target_cases_t1": 64.0,
+        "mean_p": 33.05797101449275,
+        "threshold_p": 64.52507201415258,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 0,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.96237,
+        "pred_hist_gradient_boosting": 1,
+        "archetype": "Near-Miss Elevated Endemic Peak",
+        "explanation": "Cases reached 64.0 (1.93x historical mean), missing the 64.5 outbreak cutoff by literally 0.5 cases (99.2% of threshold); public health larval control was highly warranted."
+      },
+      {
+        "province_en": "Loei",
+        "target_year": 2019,
+        "target_month": 8,
+        "target_year_month": "2019-08",
+        "cases_lag_0": 303.0,
+        "target_cases_t1": 141.0,
+        "mean_p": 47.26449275362319,
+        "threshold_p": 148.20789169182177,
+        "outbreak_lag_0": 1,
+        "outbreak_t1": 0,
+        "pred_persistence_last_month": 1,
+        "prob_hist_gradient_boosting": 0.98453,
+        "pred_hist_gradient_boosting": 1,
+        "archetype": "Post-Outbreak Cooldown Tail",
+        "explanation": "Province was in heavy outbreak in month t (297 cases); cases receded to 141.0 (95.1% of threshold 148.2); residual epidemic momentum triggered a prolonged alarm."
+      },
+      {
+        "province_en": "Chaiyaphum",
+        "target_year": 2019,
+        "target_month": 5,
+        "target_year_month": "2019-05",
+        "cases_lag_0": 137.0,
+        "target_cases_t1": 159.0,
+        "mean_p": 71.44202898550725,
+        "threshold_p": 175.87897947306686,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 0,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.95807,
+        "pred_hist_gradient_boosting": 1,
+        "archetype": "Pre-Outbreak Early Warning (t+2 Outbreak)",
+        "explanation": "Alarm fired at t+1 with 159 cases (mean 71.4, threshold 175.9); the true outbreak followed immediately at t+2 (389 cases), providing an invaluable 2-month early response window."
+      }
+    ],
+    "early_onset_true_positives": [
+      {
+        "province_en": "Chaiyaphum",
+        "target_year": 2019,
+        "target_month": 6,
+        "target_year_month": "2019-06",
+        "cases_lag_0": 159.0,
+        "target_cases_t1": 389.0,
+        "mean_p": 71.44202898550725,
+        "threshold_p": 175.87897947306686,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 1,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.97975,
+        "pred_hist_gradient_boosting": 1,
+        "archetype": "Pre-Emptive Onset Detection (+145% Surge)",
+        "explanation": "Month t cases were 159.0 (below threshold 175.9), causing Persistence to predict 0; HGB detected weather/trend signals (prob=0.980) and caught the 389-case outbreak 1 month ahead."
+      },
+      {
+        "province_en": "Nakhon Phanom",
+        "target_year": 2019,
+        "target_month": 6,
+        "target_year_month": "2019-06",
+        "cases_lag_0": 166.0,
+        "target_cases_t1": 242.0,
+        "mean_p": 48.789855072463766,
+        "threshold_p": 173.21788190059667,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 1,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.97621,
+        "pred_hist_gradient_boosting": 1,
+        "archetype": "Northeastern Border Onset Detection",
+        "explanation": "Month t cases were 166.0 (below threshold 173.2); Persistence failed (pred=0), but HGB predicted outbreak (prob=0.976), correctly forecasting the jump to 242.0."
+      },
+      {
+        "province_en": "Chiang Rai",
+        "target_year": 2019,
+        "target_month": 7,
+        "target_year_month": "2019-07",
+        "cases_lag_0": 358.0,
+        "target_cases_t1": 1173.0,
+        "mean_p": 103.5036231884058,
+        "threshold_p": 424.8802586257172,
+        "outbreak_lag_0": 0,
+        "outbreak_t1": 1,
+        "pred_persistence_last_month": 0,
+        "prob_hist_gradient_boosting": 0.97532,
+        "pred_hist_gradient_boosting": 1,
+        "archetype": "Severe Epidemic Wave Early Warning",
+        "explanation": "Month t cases were 358.0 (below threshold 424.9); Persistence predicted no outbreak, whereas HGB assigned prob=0.975, giving health authorities 1-month lead time before cases exploded to 1,173.0."
+      }
+    ]
+  }
+}

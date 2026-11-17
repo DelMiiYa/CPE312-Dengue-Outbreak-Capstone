@@ -1,0 +1,111 @@
+{
+  "total_panel_rows": 27720,
+  "modeling_table_rows": 26100,
+  "total_dropped_rows": 1620,
+  "dropped_rows_accounting": {
+    "total_dropped": 1620,
+    "breakdown": {
+      "initial_lags_regular_provinces": {
+        "count": 792,
+        "description": "72 regular provinces x 11 months (1993-01 to 1993-11) missing 11-month lag for outbreak_same_month_last_year"
+      },
+      "late_starting_provinces_pre_start": {
+        "count": 480,
+        "description": "4 late provinces (Amnat Charoen, Mukdahan, Nong Bua Lamphu, Sa Kaeo) x 120 months (1993-01 to 2002-12) unestablished"
+      },
+      "late_starting_provinces_initial_lags": {
+        "count": 44,
+        "description": "4 late provinces x 11 months (2003-01 to 2003-11) missing 11-month lag for outbreak_same_month_last_year"
+      },
+      "bueng_kan_pre_start": {
+        "count": 216,
+        "description": "Bueng Kan x 216 months (1993-01 to 2010-12) unestablished"
+      },
+      "bueng_kan_initial_lags": {
+        "count": 11,
+        "description": "Bueng Kan x 11 months (2011-01 to 2011-11) missing 11-month lag for outbreak_same_month_last_year"
+      },
+      "end_of_series_missing_target": {
+        "count": 77,
+        "description": "77 provinces x 1 month (2022-12) missing target month 2023-01"
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 19632,
+      "provinces": 77,
+      "min_target_year": 1994,
+      "max_target_year": 2015,
+      "outbreak_count": 1923,
+      "non_outbreak_count": 17709,
+      "prevalence": 0.0979523227383863
+    },
+    "val": {
+      "rows": 1848,
+      "provinces": 77,
+      "min_target_year": 2016,
+      "max_target_year": 2017,
+      "outbreak_count": 70,
+      "non_outbreak_count": 1778,
+      "prevalence": 0.03787878787878788
+    },
+    "test": {
+      "rows": 4620,
+      "provinces": 77,
+      "min_target_year": 2018,
+      "max_target_year": 2022,
+      "outbreak_count": 392,
+      "non_outbreak_count": 4228,
+      "prevalence": 0.08484848484848485
+    },
+    "test_normal_2018_2019": {
+      "rows": 1848,
+      "provinces": 77,
+      "min_target_year": 2018,
+      "max_target_year": 2019,
+      "outbreak_count": 269,
+      "non_outbreak_count": 1579,
+      "prevalence": 0.14556277056277056
+    },
+    "test_covid_2020_2022": {
+      "rows": 2772,
+      "provinces": 77,
+      "min_target_year": 2020,
+      "max_target_year": 2022,
+      "outbreak_count": 123,
+      "non_outbreak_count": 2649,
+      "prevalence": 0.044372294372294376
+    }
+  },
+  "feature_columns": [
+    "cases_lag_0",
+    "cases_lag_1",
+    "cases_lag_2",
+    "cases_lag_3",
+    "cases_roll_mean_3",
+    "cases_zscore_lag_0",
+    "outbreak_lag_0",
+    "outbreak_same_month_last_year",
+    "temp_lag_0",
+    "temp_lag_1",
+    "temp_lag_2",
+    "temp_lag_3",
+    "precip_lag_0",
+    "precip_lag_1",
+    "precip_lag_2",
+    "precip_lag_3",
+    "humidity_lag_0",
+    "humidity_lag_1",
+    "humidity_lag_2",
+    "humidity_lag_3",
+    "month",
+    "target_month",
+    "sin_target_month",
+    "cos_target_month",
+    "mean_p",
+    "sd_p",
+    "threshold_p"
+  ],
+  "target_column": "outbreak_t1"
+}
